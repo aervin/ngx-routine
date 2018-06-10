@@ -22,6 +22,12 @@
       ],
       "ngx-routine-lib/*": [
         "dist/ngx-routine-lib/*"
+      ],
+      "ngx-routine": [
+        "dist/ngx-routine"
+      ],
+      "ngx-routine/*": [
+        "dist/ngx-routine/*"
       ]
     }
   }

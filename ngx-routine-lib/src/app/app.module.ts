@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgxRoutineLibModule } from 'ngx-routine-lib';
+import { NgxRoutineModule } from 'ngx-routine';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    NgxRoutineLibModule
+    NgxRoutineModule
   ],
   providers: [],
   bootstrap: [AppComponent]
