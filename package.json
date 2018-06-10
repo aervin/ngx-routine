@@ -5,6 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build_lib": "ng build ngx-routine",
+    "build_lib:prod": "ng build --prod ngx-routine",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

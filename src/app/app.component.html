@@ -12,11 +12,25 @@
     >
         <mat-nav-list>
             <mat-list-item>
-                <mat-icon>info</mat-icon>
+                <mat-icon>build</mat-icon>
                 Components
             </mat-list-item>
             <mat-divider></mat-divider>
         </mat-nav-list>
     </mat-sidenav>
-    <mat-sidenav-content></mat-sidenav-content>
+    <mat-sidenav-content>
+        <routine-master-detail
+            discriminator="id"
+            displayProperty="name"
+            [dataSource]="[{ id: 0, name: 'Fred' }, { id: 1, name: 'Juan' }]"
+            [detailTemplate]="detailTemplate"
+        >
+            <ng-template
+                #detailTemplate
+                let-data
+            >
+                <h6>You selected {{ data.name }}</h6>
+            </ng-template>
+        </routine-master-detail>
+    </mat-sidenav-content>
 </mat-sidenav-container>

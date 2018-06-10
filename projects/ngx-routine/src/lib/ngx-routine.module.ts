@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
-import { RoutineMasterDetailComponent } from './routine-master-detail/routine-master-detail.component';
+import { RoutineMasterDetailModule } from './routine-master-detail/routine-master-detail.module';
 
 @NgModule({
-  imports: [],
-  declarations: [RoutineMasterDetailComponent],
-  exports: [RoutineMasterDetailComponent]
+  imports: [RoutineMasterDetailModule],
+  exports: [RoutineMasterDetailModule]
 })
 export class NgxRoutineModule {}
