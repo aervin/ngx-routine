@@ -7,5 +7,6 @@ import { Component, Input } from '@angular/core';
 })
 export class ComponentDemoComponent {
   @Input() public componentSourceCode: string;
+  @Input() public demoTemplateSourceCode: string;
   @Input() public heading: string;
 }

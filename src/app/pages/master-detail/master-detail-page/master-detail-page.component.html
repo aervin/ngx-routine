@@ -1,7 +1,9 @@
 <app-component-demo
     heading="Master/detail simple"
     [componentSourceCode]="componentSourceHtml"
+    [demoTemplateSourceCode]="demoSourceHtml"
 >
+    <!-- start: demo template source -->
     <routine-master-detail
         discriminatorProperty="id"
         displayProperty="name"
@@ -15,4 +17,5 @@
             <h6>You selected {{ data.name }}</h6>
         </ng-template>
     </routine-master-detail>
+    <!-- end: demo template source -->
 </app-component-demo>

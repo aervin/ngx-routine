@@ -1,12 +1,21 @@
 <mat-card>
     <mat-card-content>
         <h2 class="typography-inconsolata-large">{{ heading }}</h2>
-        <mat-divider></mat-divider>
         <mat-tab-group>
             <mat-tab label="Demo">
                 <ng-content></ng-content>
             </mat-tab>
-            <mat-tab label="Component src">
+            <mat-tab label="Demo template src">
+                <pre>
+                    <code
+                        class="language-markup"
+                        *ngIf="demoTemplateSourceCode"
+                        [innerHtml]="demoTemplateSourceCode"
+                    >
+                    </code>
+                </pre>
+            </mat-tab>
+            <mat-tab label="Lib component src">
                 <pre>
                     <code
                         class="language-ts"
