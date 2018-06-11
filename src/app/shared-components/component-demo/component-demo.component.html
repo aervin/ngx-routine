@@ -1,11 +1,15 @@
 <mat-card>
     <mat-card-content>
         <h2 class="typography-inconsolata-large">{{ heading }}</h2>
-        <mat-tab-group>
+        <mat-tab-group [disableRipple]="true">
             <mat-tab label="Demo">
                 <ng-content></ng-content>
             </mat-tab>
             <mat-tab label="Demo template src">
+                <ng-template mat-tab-label>
+                    <span>Demo template src</span>
+                    <mat-icon>code</mat-icon>
+                </ng-template>
                 <pre>
                     <code
                         class="language-markup"
@@ -16,6 +20,10 @@
                 </pre>
             </mat-tab>
             <mat-tab label="Lib component src">
+                <ng-template mat-tab-label>
+                    <span>Lib component src</span>
+                    <mat-icon>code</mat-icon>
+                </ng-template>
                 <pre>
                     <code
                         class="language-ts"
