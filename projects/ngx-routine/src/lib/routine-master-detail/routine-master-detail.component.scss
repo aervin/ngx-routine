@@ -12,10 +12,11 @@
   }
 
   .wrapper__master-detail-master-list {
-    width: 30%;
+    border-right: 1px solid rgba(94, 94, 94, 0.2);
+    width: 256px;
   }
 
   .wrapper__master-detail-detail {
-    width: 70%;
+    width: calc(100% - 256px);
   }
 }

@@ -15,7 +15,6 @@ export class RoutineMasterDetailComponent implements OnInit {
   /**
    * A user-supplied array; the component's primary data source
    * @default undefined
-   * @memberof RoutineMasterDetailComponent
    */
   @Input() public dataSource: any[] | undefined;
 
@@ -23,7 +22,6 @@ export class RoutineMasterDetailComponent implements OnInit {
    * When the user selects from the master list, we'll use this prop
    * to find the full object in the source array
    * @default 'id'
-   * @memberof RoutineMasterDetailComponent
    */
   @Input() public discriminatorProperty = 'id';
 
@@ -31,16 +29,13 @@ export class RoutineMasterDetailComponent implements OnInit {
    * For every object in the dataSource array, the prop whose value
    * should be used for display in the master list
    * @default 'id'
-   * @memberof RoutineMasterDetailComponent
    */
   @Input() public displayProperty = 'id';
-
 
   /**
    * A user-supplied ng-template ref; we pass this ref a data
    * context--this.detailData--in routine-master-detail.component.html
    * @default undefined
-   * @memberof RoutineMasterDetailComponent
    */
   @Input() public detailTemplate: TemplateRef<any>;
 
@@ -57,7 +52,6 @@ export class RoutineMasterDetailComponent implements OnInit {
   /**
    * When a master list item is selected, find its full object value and
    * update the detail template's data context
-   * @memberof RoutineMasterDetailComponent
    */
   public handleMasterListItemSelection(item: IdDisplayValuePair): void {
     this.detailData = {

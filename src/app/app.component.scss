@@ -5,6 +5,10 @@ mat-sidenav {
   width: 232px;
 }
 
+mat-sidenav-container {
+  height: 100%;
+}
+
 mat-sidenav-content {
   box-sizing: border-box;
   height: calc(100% - 64px);
