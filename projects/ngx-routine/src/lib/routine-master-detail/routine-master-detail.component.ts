@@ -11,6 +11,8 @@ export interface IdDisplayValuePair {
   styleUrls: ['./routine-master-detail.component.scss']
 })
 export class RoutineMasterDetailComponent implements OnInit {
+  public static readonly SOURCE_CODE = 'https://raw.githubusercontent.com/aervin/ngx-routine/master/projects/ngx-routine/src/lib/routine-master-detail/routine-master-detail.component.ts';
+
   /* A user-supplied array; the component's primary data source */
   @Input() public dataSource: any[];
 

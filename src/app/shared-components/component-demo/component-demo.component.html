@@ -1,5 +1,21 @@
 <mat-card>
-  <h2 class="typography-inconsolata-large">{{ heading }}</h2>
-  <mat-divider></mat-divider>
-  <ng-content></ng-content>
+    <mat-card-content>
+        <h2 class="typography-inconsolata-large">{{ heading }}</h2>
+        <mat-divider></mat-divider>
+        <mat-tab-group>
+            <mat-tab label="Demo">
+                <ng-content></ng-content>
+            </mat-tab>
+            <mat-tab label="Component src">
+                <pre>
+                    <code
+                        class="language-ts"
+                        *ngIf="componentSourceCode"
+                        [innerHtml]="componentSourceCode"
+                    >
+                    </code>
+                </pre>
+            </mat-tab>
+        </mat-tab-group>
+    </mat-card-content>
 </mat-card>

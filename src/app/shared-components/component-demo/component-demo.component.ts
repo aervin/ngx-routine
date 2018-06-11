@@ -6,5 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./component-demo.component.css']
 })
 export class ComponentDemoComponent {
+  @Input() public componentSourceCode: string;
   @Input() public heading: string;
 }

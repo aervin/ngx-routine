@@ -1,10 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
-* {
-  font: 400 16px/24px 'Muli', sans-serif;
-}
-
 html,
 body {
   font-family: 'Muli', sans-serif;
@@ -12,6 +8,19 @@ body {
   margin: 0;
   overflow: hidden;
   padding: 0;
+}
+
+code, pre {
+  margin: 0;
+}
+
+.mat-tab-body-content {
+  min-height: 256px;
+  height: inherit !important;
+}
+
+.mat-tab-label {
+  height: 64px !important;
 }
 
 .typography-inconsolata-large {
