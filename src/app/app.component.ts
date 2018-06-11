@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app';
+  public componentNavLinks = [
+    {
+      displayValue: 'Master/detail',
+      routerLink: 'components/master-detail'
+    }
+  ];
 }

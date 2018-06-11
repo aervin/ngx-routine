@@ -1,0 +1,21 @@
+:host {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+
+  ul {
+    list-style-type: none;
+
+    li {
+      cursor: pointer;
+    }
+  }
+
+  .wrapper__master-detail-master-list {
+    width: 30%;
+  }
+
+  .wrapper__master-detail-detail {
+    width: 70%;
+  }
+}

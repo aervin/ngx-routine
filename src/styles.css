@@ -1,13 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
+* {
+  font: 400 16px/24px 'Muli', sans-serif;
+}
 
-html, body {
+html,
+body {
   font-family: 'Muli', sans-serif;
   height: 100%;
   margin: 0;
   overflow: hidden;
   padding: 0;
+}
+
+.typography-inconsolata-large {
+  font: 400 36px/42px 'Inconsolata', monospace;
 }
 
 .typography-muli-light {
@@ -18,4 +26,9 @@ html, body {
 .typography-muli-heavy {
   font-family: 'Muli', sans-serif;
   font-weight: 600;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }

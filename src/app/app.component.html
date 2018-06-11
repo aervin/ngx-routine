@@ -6,31 +6,28 @@
 </mat-toolbar>
 
 <mat-sidenav-container>
+
     <mat-sidenav
         mode="side"
         opened
     >
+        <mat-toolbar>
+            <mat-icon>build</mat-icon>
+            Components
+        </mat-toolbar>
+        <mat-divider></mat-divider>
         <mat-nav-list>
-            <mat-list-item>
-                <mat-icon>build</mat-icon>
-                Components
+            <mat-list-item
+                *ngFor="let navLink of componentNavLinks"
+                [routerLink]="navLink.routerLink"
+            >
+                {{ navLink.displayValue }}
             </mat-list-item>
-            <mat-divider></mat-divider>
         </mat-nav-list>
     </mat-sidenav>
+
     <mat-sidenav-content>
-        <routine-master-detail
-            discriminator="id"
-            displayProperty="name"
-            [dataSource]="[{ id: 0, name: 'Fred' }, { id: 1, name: 'Juan' }]"
-            [detailTemplate]="detailTemplate"
-        >
-            <ng-template
-                #detailTemplate
-                let-data
-            >
-                <h6>You selected {{ data.name }}</h6>
-            </ng-template>
-        </routine-master-detail>
+        <router-outlet></router-outlet>
     </mat-sidenav-content>
+
 </mat-sidenav-container>

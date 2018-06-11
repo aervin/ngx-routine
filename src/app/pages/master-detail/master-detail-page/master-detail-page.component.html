@@ -1,0 +1,15 @@
+<app-component-demo>
+    <routine-master-detail
+        discriminatorProperty="id"
+        displayProperty="name"
+        [dataSource]="[{ id: 0, name: 'Fred' }, { id: 1, name: 'Juan' }]"
+        [detailTemplate]="detailTemplate"
+    >
+        <ng-template
+            #detailTemplate
+            let-data
+        >
+            <h6>You selected {{ data.name }}</h6>
+        </ng-template>
+    </routine-master-detail>
+</app-component-demo>

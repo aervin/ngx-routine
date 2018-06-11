@@ -1,12 +1,22 @@
-<ul>
-    <li
-        *ngFor="let listItem of masterListDisplayData"
-        (click)="handleMasterListItemSelection(listItem)"
+<div class="wrapper__master-detail-master-list">
+    <ul>
+        <li
+            *ngFor="let listItem of masterListDisplayData"
+            (click)="handleMasterListItemSelection(listItem)"
+        >
+            <routine-master-detail-master-list-item [data]="listItem"></routine-master-detail-master-list-item>
+        </li>
+    </ul>
+</div>
+
+<div class="wrapper__master-detail-detail">
+    <span
+        (click)="detailData = undefined;"
+        *ngIf="detailData"
     >
-        <routine-master-detail-master-list-item [data]="listItem"></routine-master-detail-master-list-item>
-    </li>
-</ul>
+        close
+    </span>
 
-<ng-container *ngTemplateOutlet="detailData ? detailTemplate : zeroState; context: detailData"></ng-container>
-
-<ng-template #zeroState>Select from the list to get started.</ng-template>
+    <ng-container *ngTemplateOutlet="detailData ? detailTemplate : zeroState; context: detailData"></ng-container>
+    <ng-template #zeroState>Select from the list to get started.</ng-template>
+</div>
