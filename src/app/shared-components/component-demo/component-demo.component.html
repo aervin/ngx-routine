@@ -11,6 +11,7 @@
                     <mat-icon>code</mat-icon>
                 </ng-template>
                 <pre>
+
                     <code
                         class="language-markup"
                         *ngIf="demoTemplateSourceCode"
@@ -19,16 +20,32 @@
                     </code>
                 </pre>
             </mat-tab>
-            <mat-tab label="Lib component src">
+            <mat-tab label="Lib component TS src">
                 <ng-template mat-tab-label>
                     <span>Lib component src</span>
                     <mat-icon>code</mat-icon>
                 </ng-template>
                 <pre>
+
                     <code
                         class="language-ts"
                         *ngIf="componentSourceCode"
                         [innerHtml]="componentSourceCode"
+                    >
+                    </code>
+                </pre>
+            </mat-tab>
+            <mat-tab label="Lib template src">
+                <ng-template mat-tab-label>
+                    <span>Lib template src</span>
+                    <mat-icon>code</mat-icon>
+                </ng-template>
+                <pre>
+
+                    <code
+                        class="language-markup"
+                        *ngIf="componentTemplateSourceCode"
+                        [innerHtml]="componentTemplateSourceCode"
                     >
                     </code>
                 </pre>
