@@ -12,7 +12,7 @@ export class MasterDetailPageComponent {
   public static readonly COMPONENT_SOURCE_TEMPLATE_URL =
     'https://raw.githubusercontent.com/aervin/ngx-routine/master/projects/ngx-routine/src/lib/routine-master-detail/routine-master-detail.component.html';
   public static readonly DEMO_TEMPLATE_SOURCE_CODE_URL =
-    'https://raw.githubusercontent.com/aervin/ngx-routine/master/src/app/pages/master-detail/master-detail-page/master-detail-page.component.html';
+    'https://raw.githubusercontent.com/aervin/ngx-routine/master/src/app/pages/master-detail/master-detail-demos/demo-master-detail-basic/demo-master-detail-basic.component.html';
   public componentSourceHtml: string;
   public demoSourceHtml: string;
   public componentTemplateSourceHtml: string;
