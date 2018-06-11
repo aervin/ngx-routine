@@ -4,19 +4,5 @@
     [componentTemplateSourceCode]="componentTemplateSourceHtml"
     [demoTemplateSourceCode]="demoSourceHtml"
 >
-    <!-- start: demo template source -->
-    <routine-master-detail
-        discriminatorProperty="id"
-        displayProperty="name"
-        [dataSource]="[{ id: 0, name: 'Fred' }, { id: 1, name: 'Juan' }]"
-        [detailTemplate]="detailTemplate"
-    >
-        <ng-template
-            #detailTemplate
-            let-data
-        >
-            <h6>You selected {{ data.name }}</h6>
-        </ng-template>
-    </routine-master-detail>
-    <!-- end: demo template source -->
+    <app-demo-master-detail-basic></app-demo-master-detail-basic>
 </app-component-demo>

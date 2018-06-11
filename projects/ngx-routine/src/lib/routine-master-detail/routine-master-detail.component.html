@@ -10,13 +10,8 @@
 </div>
 
 <div class="wrapper__master-detail-detail">
-    <span
-        (click)="detailData = undefined;"
-        *ngIf="detailData"
-    >
-        close
-    </span>
-
     <ng-container *ngTemplateOutlet="detailData ? detailTemplate : zeroState; context: detailData"></ng-container>
-    <ng-template #zeroState>Select from the list to get started.</ng-template>
+    <ng-template #zeroState>
+        <h6>Select from the list to get started.</h6>
+    </ng-template>
 </div>
